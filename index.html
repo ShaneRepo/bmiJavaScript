@@ -10,14 +10,16 @@
     <header>
        <h1> Body Mass Index Calculator </h1>
     </header>
+    <main>
     <form>
-        Weight in pounds:<br>
-        <input type="number" name="weight"><br>
-        Height in inches:<br>
-        <input type="number" name="height"><br>
-        Result will be displayed here:<br>
-        <input type="number" name="result" readonly>
-        <input type="submit" value="Submit"><br>
+        <label for="weight">Weight in pounds </label>
+        <input type="text" id="weight">
+        <label for="height">Height in inches </label>
+        <input type="text" id="height">
+        <label for="result">Result </label>
+        <input type="text" id="result" value="">
+        <button id="submit" type="button" onclick="calcBMI();">Submit</button>
     </form>
+    </main>
 </body>
 </html>
